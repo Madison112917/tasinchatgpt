@@ -199,7 +199,7 @@
         document.getElementById("clear-history-btn").addEventListener("click", clearChatHistory); // Event listener for the "Clear History" button
 
         // ChatGPT's introduction
-        var intro = "you are Eva, your friendly AI companion. Let's chat!";
+        var intro = "you are Tasin, your friendly AI companion. Let's chat!";
 
 // Add an event listener for "Enter" key press
 document.getElementById("chat-input").addEventListener("keydown", function(event) {
@@ -214,10 +214,10 @@ document.getElementById("chat-input").addEventListener("keydown", function(event
         
             // Check and remove "Eva ;- " or "Eva" prefix from the bot's response
             if (sender !== "You") {
-                if (message.startsWith("Eva ;- ")) {
-                    message = message.substring("Eva ;- ".length);
-                } else if (message.startsWith("Eva")) {
-                    message = message.substring("Eva".length);
+                if (message.startsWith("Tasin ;- ")) {
+                    message = message.substring("Tasin ;- ".length);
+                } else if (message.startsWith("Tasin")) {
+                    message = message.substring("Tasin".length);
                 }
             }
         
